@@ -1,0 +1,156 @@
+.login-page-split-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: white;
+}
+
+
+.login-right-visual-side {
+  width: 50%;
+  background: linear-gradient(rgba(15, 118, 110, 0.85), rgba(20, 184, 166, 0.85)), url('https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=1200') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 40px;
+}
+
+.visual-overlay {
+  max-width: 450px;
+  text-align: center;
+}
+
+.login-brand-title {
+  font-size: 72px;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+
+.login-slogan-text {
+  font-size: 18px;
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
+
+.login-benefit-tag {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 14px 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 15px;
+  text-align: right;
+  backdrop-filter: blur(5px);
+}
+
+
+.login-left-form-side {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+  position: relative;
+}
+
+.back-nav-container {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+}
+
+.btn-back-home {
+  color: #64748b;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.btn-back-home:hover { color: #14b8a6; }
+
+.login-core-box {
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-core-box h2 {
+  font-size: 28px;
+  color: #1f2937;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.welcome-subtext {
+  color: #64748b;
+  font-size: 15px;
+  margin-bottom: 35px;
+}
+
+/* الحقول والإنبوت */
+.form-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.form-input-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #4b5563;
+}
+
+.form-input-group input {
+  padding: 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  background-color: #f9fafb;
+}
+.form-input-group input:focus {
+  border-color: #14b8a6;
+  background-color: white;
+}
+
+.forgot-password-row {
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.link-forgot {
+  color: #14b8a6;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+
+.btn-submit-login {
+  width: 100%;
+  background-color: #14b8a6;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(20, 184, 166, 0.2);
+}
+.btn-submit-login:hover { background-color: #0f766e; }
+
+.no-account-text {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.link-highlight-green {
+  color: #14b8a6;
+  font-weight: bold;
+  cursor: pointer;
+}
