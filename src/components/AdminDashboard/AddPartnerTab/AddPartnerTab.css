@@ -1,0 +1,82 @@
+.add-partner-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.add-partner-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 40px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.add-partner-title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 900;
+  margin-bottom: 30px;
+  color: #1e293b;
+}
+
+.add-partner-group {
+  margin-bottom: 20px;
+}
+
+.add-partner-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 700;
+  color: #475569;
+}
+
+.add-partner-input {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.add-partner-input:focus {
+  border-color: #0f766e;
+}
+
+.add-partner-submit {
+  width: 100%;
+  padding: 14px;
+  background: #0f766e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.add-partner-submit:hover:not(:disabled) {
+  background: #14b8a6;
+  transform: translateY(-2px);
+}
+
+.add-partner-submit:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .add-partner-card {
+    padding: 25px 20px;
+  }
+  
+  .add-partner-title {
+    font-size: 20px;
+  }
+}

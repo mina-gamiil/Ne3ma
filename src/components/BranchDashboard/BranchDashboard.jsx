@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
-
-import BranchSidebar from './BranchSidebar';
-
-import BranchOrdersTab from './BranchOrdersTab';
-import BranchItemsTab from './BranchItemsTab';
-import BranchStatisticsTab from './BranchStatisticsTab';
-import BranchSettingsTab from './BranchSettingsTab'; 
+import BranchSidebar from './BranchSidebar/BranchSidebar';
+import BranchSettingsTab from './BranchSettingsTab/BranchSettingsTab';
+import BranchStatisticsTab from './BranchStatisticsTab/BranchStatisticsTab';
+import MenuTab from './MenuTab/MenuTab';
+import OrdersTab from './OrdersTab/OrdersTab';
+import './BranchDashboard.css';
 
 export default function BranchDashboard({ onNavigate }) {
   const [activeTab, setActiveTab] = useState('statistics');
@@ -21,8 +20,7 @@ export default function BranchDashboard({ onNavigate }) {
   };
 
   return (
-    <div style={{ display: 'flex', height: '100vh', width: '100vw', direction: 'rtl', background: '#f8fafc', margin: 0, padding: 0, overflow: 'hidden' }}>
-      
+    <div className="branch-dashboard-wrapper">
       <style>{`
         html, body, #root { 
           overflow: hidden !important; 
@@ -44,7 +42,7 @@ export default function BranchDashboard({ onNavigate }) {
 
       <BranchSidebar activeTab={activeTab} setActiveTab={setActiveTab} onNavigate={onNavigate} />
       
-      <div style={{ flex: 1, height: '100vh', overflow: 'hidden' }}>
+      <div className="branch-main-area">
         {renderContent()}
       </div>
       

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import WelcomePage from './WelcomePage';
-import ChatPage from './ChatPage';
-import LoginPage from './LoginPage';
-import RegisterPage from './RegisterPage';
+import WelcomePage from './components/WelcomPage/WelcomePage';
+import ChatPage from './components/ChatPage/ChatPage';
+import LoginPage from './components/LoginPage/LoginPage';
+import RegisterPage from './components/RegisterPage/RegisterPage';
 import AdminDashboard from './components/AdminDashboard/AdminDashboard';
 import PartnerDashboard from './components/PartnerDashboard/PartnerDashboard';
 import BranchDashboard from './components/BranchDashboard/BranchDashboard';  

@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import PartnerSidebar from './PartnerSidebar';
-import PartnerStatisticsTab from './PartnerStatisticsTab';
-import PartnerBranchesTab from './PartnerBranchesTab';
-import PartnerProfileTab from './PartnerProfileTab';
+import PartnerSidebar from './PartnerSidebar/PartnerSidebar';
+import PartnerStatisticsTab from './PartnerStatisticsTab/PartnerStatisticsTab';
+import PartnerBranchesTab from './PartnerBranchesTab/PartnerBranchesTab';
+import PartnerProfileTab from './PartnerProfileTab/PartnerProfileTab';
+import './PartnerDashboard.css';
 
 export default function PartnerDashboard({ onNavigate }) {
   const [activeTab, setActiveTab] = useState('statistics');
@@ -13,21 +14,17 @@ export default function PartnerDashboard({ onNavigate }) {
       case 'statistics': return <PartnerStatisticsTab />;
       case 'branches':   return <PartnerBranchesTab />;
       case 'profile':    return <PartnerProfileTab />;
-      default:           return <PartnerStatisticsTab />;
+      default:             return <PartnerStatisticsTab />;
     }
   };
 
   return (
-    <div style={{ display: 'flex', height: '100vh', width: '100vw', background: '#f8fafc', overflow: 'hidden', direction: 'rtl' }}>
-      
-      
+    <div className="partner-dashboard-wrapper">
       <PartnerSidebar activeTab={activeTab} setActiveTab={setActiveTab} onNavigate={onNavigate} />
       
-    
-      <div style={{ flex: 1, overflowY: 'auto' }}>
+      <div className="partner-main-content">
         {renderContent()}
       </div>
-      
     </div>
   );
 }

@@ -1,0 +1,74 @@
+.top-mini-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-right-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.brand-logo-green {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0f766e;
+  margin: 0;
+}
+
+.logo-slash {
+  color: #cbd5e1;
+}
+
+.brand-arabic {
+  color: #14b8a6;
+}
+
+.company-badge {
+  font-size: 11px;
+  background-color: #f1f5f9;
+  color: #64748b;
+  padding: 4px 8px;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+}
+
+.nav-left-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.nav-chat-shortcut-btn, .nav-login-shortcut-btn {
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .top-mini-nav {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 20px;
+    text-align: center;
+  }
+  .nav-right-brand {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .nav-left-actions {
+    width: 100%;
+    justify-content: center;
+  }
+}

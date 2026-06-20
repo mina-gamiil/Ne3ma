@@ -1,0 +1,30 @@
+.story-content-flex {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.icon-green {
+  background-color: #ecfdf5;
+  color: #10b981;
+}
+
+.icon-blue {
+  background-color: #eff6ff;
+  color: #3b82f6;
+}
+
+.icon-orange {
+  background-color: #fff7ed;
+  color: #f97316;
+}
+
+@media (max-width: 768px) {
+  .story-content-flex {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .story-text-side, .story-cards-side {
+    width: 100%;
+  }
+}

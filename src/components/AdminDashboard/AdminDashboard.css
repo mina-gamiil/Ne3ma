@@ -1,0 +1,25 @@
+.admin-dashboard-wrapper {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f8fafc;
+  direction: rtl;
+  overflow: hidden;
+}
+
+.admin-main-content {
+  flex: 1;
+  padding: 40px;
+  overflow-y: auto;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .admin-dashboard-wrapper {
+    flex-direction: column;
+  }
+  
+  .admin-main-content {
+    padding: 20px 15px;
+  }
+}

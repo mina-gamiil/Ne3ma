@@ -1,0 +1,63 @@
+.users-tab-container {
+  background-color: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+  overflow-x: auto;
+}
+
+.users-tab-title {
+  font-size: 20px;
+  font-weight: 800;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #1e293b;
+}
+
+.users-loading-msg {
+  color: #64748b;
+  font-weight: bold;
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: right;
+}
+
+.users-table thead tr {
+  background-color: #f1f5f9;
+}
+
+.users-table th {
+  padding: 14px;
+  border-bottom: 2px solid #e2e8f0;
+  color: #475569;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.users-table tr {
+  transition: background-color 0.2s ease;
+}
+
+.users-table tr:hover {
+  background-color: #f8fafc;
+}
+
+.users-table td {
+  padding: 14px;
+  border-bottom: 1px solid #e2e8f0;
+  color: #334155;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.user-name-cell {
+  font-weight: bold;
+  color: #0369a1;
+}
+
+.user-email-cell {
+  color: #64748b;
+}

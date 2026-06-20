@@ -1,0 +1,120 @@
+.requests-container {
+  background-color: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+.requests-title {
+  font-size: 20px;
+  font-weight: 800;
+  color: #1e293b;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.filters-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.filter-btn.active {
+  background-color: #0f766e;
+  color: white;
+}
+
+.filter-btn.inactive {
+  background-color: #e2e8f0;
+  color: #475569;
+}
+
+.filter-btn:hover:not(.active) {
+  background-color: #cbd5e1;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.requests-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: right;
+}
+
+.requests-table th {
+  padding: 14px;
+  background-color: #f1f5f9;
+  color: #475569;
+  font-weight: 700;
+  border-bottom: 2px solid #e2e8f0;
+  white-space: nowrap;
+}
+
+.requests-table td {
+  padding: 14px;
+  border-bottom: 1px solid #e2e8f0;
+  color: #334155;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.requests-table tr:hover {
+  background-color: #f8fafc;
+}
+
+.approve-btn {
+  background-color: #10b981;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+  white-space: nowrap;
+}
+
+.approve-btn:hover {
+  background-color: #059669;
+  transform: translateY(-2px);
+}
+
+.status-badge {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.status-badge.waiting {
+  color: #f59e0b;
+}
+
+.status-badge.contacted {
+  color: #166534;
+}
+
+.msg-text {
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.msg-empty {
+  color: #10b981;
+}
+
+.msg-loading {
+  color: #64748b;
+}

@@ -1,0 +1,54 @@
+.app-download-showcase {
+  height: auto;
+  min-height: fit-content;
+  padding: 50px 20px;
+  display: block;
+  overflow: visible;
+}
+
+.app-showcase-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.app-info-side {
+  flex: 1 1 400px;
+}
+
+.app-phones-visual-side {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone-mockup-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.app-screenshot-img {
+  width: 100%;
+  max-width: 210px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .app-showcase-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+  .app-info-side, .app-phones-visual-side {
+    flex: 1 1 100%;
+  }
+}

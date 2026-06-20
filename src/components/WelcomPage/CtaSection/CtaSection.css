@@ -1,0 +1,11 @@
+.ready-orange-footer-cta {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .orange-action-btn-white-text {
+    width: 100%;
+    max-width: 280px;
+  }
+}
