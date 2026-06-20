@@ -11,8 +11,8 @@ export default function BranchDashboard({ onNavigate }) {
 
   const renderContent = () => {
     switch (activeTab) {
-      case 'orders':     return <BranchOrdersTab />;
-      case 'menu':       return <BranchItemsTab />;
+      case 'orders':     return <OrdersTab />;
+      case 'menu':       return <MenuTab />;
       case 'statistics': return <BranchStatisticsTab />;
       case 'settings':   return <BranchSettingsTab />;
       default:           return <BranchStatisticsTab />;
