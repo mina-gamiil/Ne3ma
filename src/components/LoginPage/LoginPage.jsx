@@ -25,8 +25,7 @@ function LoginPage({ onNavigate }) {
         const data = await response.json(); 
         
         const decodedToken = jwtDecode(data.token);
-        console.log("Decoded JWT Data:", decodedToken);
-
+        
         const userRole = decodedToken["http://schemas.microsoft.com/ws/2008/06/identity/claims/role"] || decodedToken.role;
 
         if (userRole === "Admin") {
@@ -68,6 +67,8 @@ function LoginPage({ onNavigate }) {
 
   return (
     <div className="login-container">
+      <span className="back-btn" onClick={() => onNavigate('landing')}>العودة للرئيسية ↩</span>
+
       <div className="login-right">
         <h1 className="brand-title">نعمة</h1>
         <p className="slogan">نحن نحول <b>الهدر</b> إلى <b>إيرادات</b></p>
@@ -77,7 +78,6 @@ function LoginPage({ onNavigate }) {
 
       <div className="login-left">
         <div className="form-core-box">
-          <span className="back-btn" onClick={() => onNavigate('landing')}>العودة للرئيسية ↩</span>
           <h2 className="form-title">تسجيل الدخول لمدير المتجر</h2>
           <p className="form-subtext">مرحباً بعودتك! يرجى تسجيل الدخول للمتابعة.</p>
           

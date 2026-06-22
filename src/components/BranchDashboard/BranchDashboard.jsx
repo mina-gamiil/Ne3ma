@@ -21,31 +21,11 @@ export default function BranchDashboard({ onNavigate }) {
 
   return (
     <div className="branch-dashboard-wrapper">
-      <style>{`
-        html, body, #root { 
-          overflow: hidden !important; 
-          height: 100vh !important; 
-        }
-        .hide-scroll::-webkit-scrollbar { 
-          display: none !important; 
-        }
-        .hide-scroll { 
-          -ms-overflow-style: none !important; 
-          scrollbar-width: none !important; 
-        }
-        *::-webkit-scrollbar { 
-          display: none !important; 
-          width: 0px !important; 
-          height: 0px !important; 
-        }
-      `}</style>
-
       <BranchSidebar activeTab={activeTab} setActiveTab={setActiveTab} onNavigate={onNavigate} />
       
       <div className="branch-main-area">
         {renderContent()}
       </div>
-      
     </div>
   );
 }

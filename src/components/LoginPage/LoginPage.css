@@ -54,13 +54,24 @@
 }
 
 .back-btn {
-  position: absolute;
-  top: 30px;
-  left: 30px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 9999;
+  background-color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   color: #64748b;
   font-size: 14px;
   cursor: pointer;
   font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  color: #0f766e;
+  transform: translateY(-2px);
 }
 
 .form-core-box {
@@ -176,7 +187,9 @@
   }
 
   .back-btn {
-    top: -20px;
-    left: 20px;
+    top: 15px !important;
+    left: 15px !important;
+    display: block !important;
+    z-index: 999999 !important;
   }
 }

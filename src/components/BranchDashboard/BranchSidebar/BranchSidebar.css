@@ -1,3 +1,15 @@
+.branch-mobile-toggle {
+  display: none;
+}
+
+.branch-sidebar-overlay {
+  display: none;
+}
+
+.branch-mobile-close {
+  display: none;
+}
+
 .branch-sidebar-container {
   width: 260px;
   background-color: #0f766e;
@@ -7,7 +19,7 @@
   padding: 20px 0;
   box-shadow: -4px 0 15px rgba(0,0,0,0.1);
   z-index: 10;
-  transition: all 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
   height: 100vh;
   overflow-y: auto;
 }
@@ -16,6 +28,7 @@
   text-align: center;
   margin-bottom: 40px;
   padding: 0 20px;
+  position: relative;
 }
 
 .branch-sidebar-avatar {
@@ -99,44 +112,74 @@
 }
 
 @media (max-width: 768px) {
-  .branch-sidebar-container {
-    width: 100%;
-    height: auto;
-    flex-direction: row;
-    flex-wrap: wrap;
+  .branch-mobile-toggle {
+    display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 15px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    justify-content: center;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 900;
+    background-color: #0f766e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    width: 45px;
+    height: 45px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  }
+
+  .branch-sidebar-overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 998;
+  }
+
+  .branch-sidebar-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 260px;
+    height: 100vh;
+    z-index: 999;
+    transform: translateX(100%);
+  }
+
+  .branch-sidebar-container.open {
+    transform: translateX(0);
+  }
+
+  .branch-mobile-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    width: 35px;
+    height: 35px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .branch-mobile-close:hover {
+    background-color: rgba(255, 255, 255, 0.2);
   }
 
   .branch-sidebar-header {
-    text-align: right;
-    margin-bottom: 0;
-    padding: 0;
-    flex: 1;
-  }
-
-  .branch-nav-list {
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    margin-top: 15px;
-    padding: 0;
-    gap: 10px;
-  }
-
-  .branch-nav-item {
-    width: auto;
-    flex: 1 1 120px;
-    padding: 12px 10px;
-    font-size: 14px;
-    justify-content: center;
-  }
-
-  .branch-footer-wrapper {
-    padding: 0;
-    margin-top: 15px;
-    width: 100%;
+    margin-top: 30px;
   }
 }
