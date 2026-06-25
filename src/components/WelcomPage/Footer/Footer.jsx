@@ -6,7 +6,7 @@ function Footer({ onNavigate }) {
     <footer className="dark-footer-links">
       <div className="footer-cols">
         <div className="footer-col">
-          <h5>منصة نعمة</h5>
+          <h5>منصة نعمه</h5>
           <p>رؤيتنا هي القضاء التام على هدر الطعام في مصر وتحقيق عوائد ذكية لأصحاب الأعمال.</p>
         </div>
         <div className="footer-col">
@@ -22,7 +22,7 @@ function Footer({ onNavigate }) {
         </div>
       </div>
       <div className="footer-social-bottom">
-        <p>© 2026 Ne3ma Project. جميع الحقوق محفوظة لشركاء النعمة. 🍃</p>
+        <p>© 2026 Neama Project. جميع الحقوق محفوظة لشركاء نعمه. 🍃</p>
       </div>
     </footer>
   );

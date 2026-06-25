@@ -1,10 +1,10 @@
 .register-container {
   display: flex;
-  min-height: 100vh;
-  width: 100vw;
+  height: 100vh;
+  width: 100%;
   background-color: #f8fafc;
   direction: rtl;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .register-right {
@@ -13,7 +13,7 @@
   padding: 40px 8%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  overflow-y: auto;
 }
 
 .register-left {
@@ -126,6 +126,7 @@
   margin-top: 20px;
   font-size: 14px;
   color: #64748b;
+  padding-bottom: 20px;
 }
 
 .mint-link {
@@ -138,6 +139,7 @@
   .register-container {
     flex-direction: column-reverse;
     height: auto;
+    overflow: visible;
   }
   
   .register-left {
@@ -150,5 +152,6 @@
 
   .register-right {
     padding: 40px 20px;
+    overflow-y: visible;
   }
 }

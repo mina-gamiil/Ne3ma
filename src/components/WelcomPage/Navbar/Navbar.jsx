@@ -5,10 +5,12 @@ function Navbar({ onNavigate }) {
   return (
     <nav className="top-mini-nav">
       <div className="nav-right-brand" onClick={() => onNavigate('landing')}>
-        <h1 className="brand-logo-green">
-          Ne3ma <span className="logo-slash">|</span> <span className="brand-arabic">نعمة</span>
-        </h1>
-        <span className="company-badge">An Egyptian Company</span>
+        <div className="logo-images-container">
+          <img src="/Image/icon.svg" alt="logo" className="navbar-logo-img" />
+          
+          <img src="/Image/نعمه.svg" alt="نعمة" className="navbar-logo-img logo-ar" />
+        </div>
+       
       </div>
       
       <div className="nav-left-actions">

@@ -2,88 +2,77 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 15px 20px;
   background-color: white;
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
   position: sticky;
   top: 0;
   z-index: 100;
   margin-bottom: 20px;
+  direction: rtl;
 }
 
 .nav-right-brand {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   cursor: pointer;
+}
+
+.logo-images-container {
+  display: flex;
+  align-items: center;
   gap: 2px;
 }
 
-.brand-logo-green {
-  font-size: 22px;
-  font-weight: bold;
-  color: #0f766e;
-  margin: 0;
-  line-height: 1.2;
+.navbar-logo-img {
+  height: 45px;
+  width: auto;
+  object-fit: contain;
 }
 
-.logo-slash {
-  color: #cbd5e1;
+.logo-ar {
+  height: 65px;
 }
-
-.brand-arabic {
-  color: #14b8a6;
-}
-
-.company-badge {
-  font-size: 9px;
-  background-color: #f1f5f9;
-  color: #64748b;
-  padding: 2px 5px;
-  border-radius: 4px;
-  border: 1px solid #e2e8f0;
-  white-space: nowrap;
-  margin-top: 2px;
-}
-
 .nav-left-actions {
   display: flex;
-  gap: 10px;
+  gap: 12px;
+  align-items: center;
 }
 
 .nav-chat-shortcut-btn, .nav-login-shortcut-btn {
-  padding: 8px 15px;
+  padding: 10px 18px;
   border-radius: 8px;
   font-weight: bold;
   cursor: pointer;
   border: none;
-  font-size: 13px;
+  font-size: 14px;
   transition: 0.3s;
 }
 
 @media (max-width: 768px) {
   .top-mini-nav {
     flex-direction: row;
-    padding: 10px 15px;
-    margin-bottom: 20px;
+    padding: 12px 15px;
   }
   
-  .nav-right-brand {
-    align-items: flex-start;
-    gap: 0;
+  .navbar-logo-img {
+    height: 32px;
   }
-  
-  .brand-logo-green {
-    font-size: 18px;
+
+  .logo-ar {
+    height: 45px;
   }
-  
-  .company-badge {
-    font-size: 8px;
-    padding: 1px 4px;
+
+  .logo-slash {
+    font-size: 16px;
+  }
+
+  .nav-left-actions {
+    gap: 8px;
   }
 
   .nav-chat-shortcut-btn, .nav-login-shortcut-btn {
-    padding: 6px 12px;
+    padding: 8px 12px;
     font-size: 12px;
   }
 }

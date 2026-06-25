@@ -70,7 +70,7 @@ function LoginPage({ onNavigate }) {
       <span className="back-btn" onClick={() => onNavigate('landing')}>العودة للرئيسية ↩</span>
 
       <div className="login-right">
-        <h1 className="brand-title">نعمة</h1>
+        <h1 className="brand-title">نعمه</h1>
         <p className="slogan">نحن نحول <b>الهدر</b> إلى <b>إيرادات</b></p>
         <div className="feature-tag">🏪 قم بإدارة متاجرك ومخزونك بسهولة</div>
         <div className="feature-tag">📊 تتبع المبيعات والتحليلات في الوقت الفعلي</div>
@@ -91,7 +91,7 @@ function LoginPage({ onNavigate }) {
               <input className="custom-input" type="password" placeholder="كلمة المرور الخاصة بك" value={password} onChange={(e) => setPassword(e.target.value)} required />
             </div>
             <div className="forgot-row">
-              <span className="forgot-link">نسيت كلمة المرور؟</span>
+              <span className="forgot-link" onClick={() => onNavigate('forgot-password')} style={{cursor: 'pointer'}}>نسيت كلمة المرور؟</span>
             </div>
             <button type="submit" className="submit-btn" disabled={isLoading}>
               {isLoading ? "جاري التحقق ..." : "تسجيل الدخول"}

@@ -6,7 +6,7 @@ function AppDownload() {
     <section className="app-download-showcase">
       <div className="app-showcase-flex">
         <div className="app-info-side">
-          <h2>حمل تطبيق نعمة</h2>
+          <h2>حمل تطبيق نعمه</h2>
           <p>
             حمل تطبيقنا للحصول على أفضل تجربة لتصفح وحجز الوجبات الفائضة النظيفة من حولك. وفر المال وساهم في حماية البيئة مع ميزات حصرية مخصصة للمستهلكين.
           </p>

@@ -12,7 +12,7 @@ function Features() {
       </div>
 
       <div className="features-carousel-container">
-        <button className="carousel-nav-btn"><i className="fas fa-chevron-right"></i></button>
+        
 
         <div className="features-cards-grid">
           <div className="feature-card-item">
@@ -20,15 +20,14 @@ function Features() {
               <h3>الابتكار المستمر</h3>
               <p>تطوير ميزات وحلول جديدة لمعالجة هدر الطعام</p>
             </div>
-            <div className="feature-icon-box"><i className="fas fa-bolt"></i></div>
+            
           </div>
 
           <div className="feature-card-item">
             <div className="feature-text-content">
               <h3>التوسع العالمي</h3>
-              <p>جلب نظام نعمة إلى مدن عبر أنحاء الجمهورية وما وراءها</p>
+              <p>جلب نظام نعمه إلى مدن عبر أنحاء الجمهورية وما وراءها</p>
             </div>
-            <div className="feature-icon-box"><i className="fas fa-globe"></i></div>
           </div>
 
           <div className="feature-card-item">
@@ -36,7 +35,7 @@ function Features() {
               <h3>نظام بيئي كامل</h3>
               <p>إنشاء منصة شاملة تجمع كل جوانب إنقاذ الطعام</p>
             </div>
-            <div className="feature-icon-box"><i className="fas fa-project-diagram"></i></div>
+          
           </div>
 
           <div className="feature-card-item">
@@ -44,11 +43,11 @@ function Features() {
               <h3>التعليم والوعي</h3>
               <p>تعليم المجتمعات حول الاستدامة والاستهلاك الواعي</p>
             </div>
-            <div className="feature-icon-box"><i className="fas fa-graduation-cap"></i></div>
+          
           </div>
         </div>
 
-        <button className="carousel-nav-btn"><i className="fas fa-chevron-left"></i></button>
+      
       </div>
     </section>
   );
