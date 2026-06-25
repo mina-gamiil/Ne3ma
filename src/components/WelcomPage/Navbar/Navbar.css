@@ -21,7 +21,7 @@
 .logo-images-container {
   display: flex;
   align-items: center;
-  gap: 2px;
+  gap: 1px;
 }
 
 .navbar-logo-img {
@@ -32,6 +32,8 @@
 
 .logo-ar {
   height: 65px;
+  padding-top: 12px;
+
 }
 .nav-left-actions {
   display: flex;
