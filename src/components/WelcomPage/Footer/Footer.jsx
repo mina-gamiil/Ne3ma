@@ -7,7 +7,7 @@ function Footer({ onNavigate }) {
       <div className="footer-cols">
         <div className="footer-col">
           <h5>منصة نعمه</h5>
-          <p>رؤيتنا هي القضاء التام على هدر الطعام في مصر وتحقيق عوائد ذكية لأصحاب الأعمال.</p>
+          <p>رؤيتنا هي القضاء التام على هدر المتاجات في مصر وتحقيق عوائد ذكية لأصحاب الأعمال.</p>
         </div>
         <div className="footer-col">
           <h5>روابط سريعة</h5>

@@ -5,20 +5,20 @@ function Hero({ onNavigate }) {
   return (
     <header className="hero-bakery-section">
       <div className="dark-overlay-layer">
-        <div className="badge-top-orange">✨ منصة تقليل هدر الطعام الأولى في مصر</div>
+        <div className="badge-top-orange">✨ منصة تقليل هدر المنتجات الأولى في مصر</div>
         
         <h2 className="hero-main-title">
-          حوّل طعامك الفائض إلى <br />
+          حوّل منتجك الفائض إلى <br />
           <span className="text-mint-neon">إيرادات إضافية وبكل سهولة</span>
         </h2>
         
         <p className="hero-sub-p">
-          انضم الآن إلى أكثر من 100 مطعم ومخبز يحققون دخلاً إضافياً من بيع الطعام الفائض النظيف للعملاء المهتمين بالبيئة وتوفير المال. لا للهدر.. زد أرباحك.
+          انضم الآن إلى أكثر من 100 متجر يحققون دخلاً إضافياً من بيع المنتجات الفائضه النظيفه للعملاء المهتمين بالبيئة وتوفير المال. لا للهدر.. زد أرباحك.
         </p>
 
         <div className="hero-info-badges">
           <div className="gray-info-badge">💰 اكسب من 400 لـ 2000+ جنيه يومياً من الفائض</div>
-          <div className="gray-info-badge">🍃 قلل هدر الطعام في محلك بنسبة تصل لـ 50%</div>
+          <div className="gray-info-badge">🍃 قلل هدر المنتاجات في محلك بنسبة تصل لـ 50%</div>
           <div className="gray-info-badge">📱 إدارة بسيطة وسريعة بضغطات زرار واحدة</div>
         </div>
 
