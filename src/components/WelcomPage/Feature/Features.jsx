@@ -7,7 +7,7 @@ function Features() {
       <div className="features-header">
         <h2 className="features-main-title">بناء عالم خالٍ من الهدر</h2>
         <p className="features-sub-title">
-          نتصور عالماً حيث هدر الطعام شيء من الماضي، حيث التكنولوجيا تربط المجتمعات، وحيث كل وجبة لها قيمة.
+          نتصور عالماً حيث هدر المنتجات شيء من الماضي، حيث التكنولوجيا تربط المجتمعات، وحيث كل وجبة لها قيمة.
         </p>
       </div>
 
@@ -18,7 +18,7 @@ function Features() {
           <div className="feature-card-item">
             <div className="feature-text-content">
               <h3>الابتكار المستمر</h3>
-              <p>تطوير ميزات وحلول جديدة لمعالجة هدر الطعام</p>
+              <p>تطوير ميزات وحلول جديدة لمعالجة هدر المنتجات</p>
             </div>
             
           </div>
@@ -33,7 +33,7 @@ function Features() {
           <div className="feature-card-item">
             <div className="feature-text-content">
               <h3>نظام بيئي كامل</h3>
-              <p>إنشاء منصة شاملة تجمع كل جوانب إنقاذ الطعام</p>
+              <p>إنشاء منصة شاملة تجمع كل جوانب إنقاذ المنتجات</p>
             </div>
           
           </div>
