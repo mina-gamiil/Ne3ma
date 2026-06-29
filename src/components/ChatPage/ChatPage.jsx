@@ -7,7 +7,7 @@ function ChatPage({ onNavigate }) {
   const messagesEndRef = useRef(null);
 
   const [messages, setMessages] = useState([
-    { text: "أهلاً بك في نعمة! 👋 أنت صاحب محل عايز تقلل الهدر وتزود الدخل، ولا عميل عايز يشتري؟", sender: "bot" }
+    { text: "أهلاً بك في نعمه! 👋 أنت صاحب محل عايز تقلل الهدر وتزود الدخل، ولا عميل عايز يشتري؟", sender: "bot" }
   ]);
 
   const [formData, setFormData] = useState({
@@ -56,7 +56,7 @@ function ChatPage({ onNavigate }) {
         setMessages((prev) => [
           ...prev, 
           { text: `تم إرسال البيانات بنجاح: \n👤 الاسم: ${formData.fullName}\n📞 الموبايل: ${formData.phone}\n🏪 المحل: ${formData.placeName}`, sender: "user" },
-          { text: "شكراً لك يا شريك النعمة! 🎉 تم استلام طلب انضمامك بنجاح على سيرفر نعمة، وفريقنا هيتواصل معاك قريب جداً لتفعيل حسابك.", sender: "bot" }
+          { text: "شكراً لك يا شريك نعمه! 🎉 تم استلام طلب انضمامك بنجاح على سيرفر نعمه، وفريقنا هيتواصل معاك قريب جداً لتفعيل حسابك.", sender: "bot" }
         ]);
         setCurrentStep("form_submitted");
         setFormData({ fullName: "", phone: "", placeName: "", location: "", email: "" });
@@ -154,9 +154,9 @@ function ChatPage({ onNavigate }) {
             <div className="figma-quick-replies-row">
               {currentStep === "welcome" && (
                 <>
-                  <button className="figma-reply-btn" onClick={() => handleRuleOption("أنا صاحب محل أكل 🏪", "show_merchant_form", "أهلاً بك يا شريك النعمة! يسعدنا جداً انضمامك لنا لتقليل الهدر وزيادة أرباحك.")}>أنا صاحب محل أكل 🏪</button>
-                  <button className="figma-reply-btn" onClick={() => handleRuleOption("عايز أنزل التطبيق 📱", "customer_branch", "تطبيق نعمة للهواتف هيكون متوفر قريباً جداً على App Store و Google Play لحفظ النعمة بسهولة!")}>عايز أنزل التطبيق 📱</button>
-                  <button className="figma-reply-btn" onClick={() => handleRuleOption("عايز أعرف أكتر عن نعمه 💡", "about_branch", "منصة نعمة بتقدم حلول ذكية لتقليل هدر الطعام في مصر وتوصيل الفائض للمستهلكين بأسعار مخفضة.")}>عايز أعرف أكتر عن نعمه 💡</button>
+                  <button className="figma-reply-btn" onClick={() => handleRuleOption("أنا صاحب محل أكل 🏪", "show_merchant_form", "أهلاً بك يا شريك نعمه! يسعدنا جداً انضمامك لنا لتقليل الهدر وزيادة أرباحك.")}>أنا صاحب محل أكل 🏪</button>
+                  <button className="figma-reply-btn" onClick={() => handleRuleOption("عايز أنزل التطبيق 📱", "customer_branch", "تطبيق نعمه للهواتف هيكون متوفر قريباً جداً على App Store و Google Play لحفظ النعمة بسهولة!")}>عايز أنزل التطبيق 📱</button>
+                  <button className="figma-reply-btn" onClick={() => handleRuleOption("عايز أعرف أكتر عن نعمه 💡", "about_branch", "منصة نعمه بتقدم حلول ذكية لتقليل هدر المنتجات في مصر وتوصيل الفائض للمستهلكين بأسعار مخفضة.")}>عايز أعرف أكتر عن نعمه 💡</button>
                 </>
               )}
 
@@ -171,7 +171,7 @@ function ChatPage({ onNavigate }) {
           )}
 
           <div className="figma-input-pill-wrapper">
-            <input type="text" placeholder="التحكم متاح عبر الأزرار الفوقية..." disabled />
+            <input type="text" placeholder="التحكم متاح عبر الأزرار الفوقيه..." disabled />
             <button className="figma-send-circle">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
             </button>
